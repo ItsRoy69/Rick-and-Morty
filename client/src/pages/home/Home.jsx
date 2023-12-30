@@ -11,7 +11,7 @@ const Home = () => {
     const fetchCharacters = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/characters"
+          "https://rick-and-morty-al6l.onrender.com//api/characters"
         );
         setCharacters(response.data);
       } catch (error) {
