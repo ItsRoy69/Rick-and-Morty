@@ -12,7 +12,7 @@ const CharacterDetails = () => {
     const fetchCharacterDetails = async () => {
       try {
         const response = await axios.get(
-          `https://rick-and-morty-al6l.onrender.com//api/characters/${id}`
+          `https://rick-and-morty-al6l.onrender.com/api/characters/${id}`
         );
         setCharacter(response.data);
       } catch (error) {

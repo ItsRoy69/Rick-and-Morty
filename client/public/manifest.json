@@ -1,11 +1,11 @@
 {
-    "name": "Rick And Morty",
-    "short_name": "App",
-    "description": "Application showing Rick and Morty characters",
-    "start_url": "https://ricksmorty.vercel.app/",
+    "name": "Rick and Morty App",
+    "short_name": "R&M App",
+    "description": "Explore Rick and Morty characters",
+    "start_url": ".",
     "display": "standalone",
-    "theme_color": "#ffffff",
     "background_color": "#ffffff",
+    "theme_color": "#000000",
     "icons": [
       {
         "src": "../logo.png",
@@ -14,3 +14,4 @@
       }
     ]
   }
+  
