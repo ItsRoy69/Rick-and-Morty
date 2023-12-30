@@ -31,7 +31,7 @@ const CharacterDetails = () => {
     <>
       <section className="character-details">
         <div className="character-component">
-          <img src={character.image} alt={character.name} />
+          <img src={character.image} alt={character.name} loading="lazy" />
           <div className="character-detail">
             <h1>{character.name}</h1>
             <p>Species: {character.species}</p>
