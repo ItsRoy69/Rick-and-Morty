@@ -1,0 +1,38 @@
+.character-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.character-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  flex-direction: column;
+}
+
+.character-component img {
+  width: 200px;
+  border-radius: 20px;
+}
+.character-detail {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+.character-detail p {
+  font-weight: 800;
+  font-size: 20px;
+  margin: 0;
+}
+
+.character-detail p {
+  font-weight: 600;
+  font-size: 16px;
+}
+.back-link {
+  margin-top: auto;
+}
