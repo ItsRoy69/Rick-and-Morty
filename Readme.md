@@ -6,7 +6,7 @@
    <p align="center"> This application allows users to explore characters from the show and view detailed information about each character.</p>
 </p>
 
-## Deployed Link : https://itsroy69.github.io/MedHelp/
+## Deployed Link : https://ricksmorty.vercel.app/
 
 ## Technologies Used 💻
 
