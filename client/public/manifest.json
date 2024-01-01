@@ -20,20 +20,20 @@
   ],
   "shortcuts": [
     {
-      "name": "MedHelp",
+      "name": "Rick and Morty App",
       "url": ".",
       "icons": [
         {
-          "src": "assets/img/logo.png",
+          "src": "../logo.png",
           "sizes": "512x512",
           "type": "image/png"
         },
         {
-          "src": "assets/img/logo.png",
+          "src": "../logo.png",
           "type": "image/png"
         },
         {
-          "src": "assets/img/logo.png",
+          "src": "../logo.png",
           "sizes": "512x512",
           "purpose": "maskable",
           "type": "image/png"
