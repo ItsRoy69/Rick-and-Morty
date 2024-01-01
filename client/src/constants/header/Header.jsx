@@ -1,9 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./header.css";
 import logo from "../../assets/logo.png";
 
 const Header = () => {
+  const location = useLocation();
+
   return (
     <>
       <header className="header">
@@ -12,12 +14,11 @@ const Header = () => {
             <img className="header-logo" src={logo} alt="logo" />
           </Link>
           <div className="header-right">
-            <input
-              className="header-input"
-              type="text"
-              placeholder="Search"
-              id="episodes-search-input"
-            />
+            {location.pathname !== "/" ? (
+              <Link to="/">
+                <h5>Home</h5>
+              </Link>
+            ) : null}
           </div>
         </div>
       </header>

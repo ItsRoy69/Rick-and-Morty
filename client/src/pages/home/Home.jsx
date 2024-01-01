@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import bannerImg from "../../assets/bannerimg.png";
 import axios from "axios";
 import "./home.css";
-import { Link } from "react-router-dom";
 
 const Home = () => {
   const [characters, setCharacters] = useState([]);
+  const [searchInput, setSearchInput] = useState("");
+
+  const filteredCharacters = characters.filter((character) =>
+    character.name.toLowerCase().includes(searchInput.toLowerCase())
+  );
 
   useEffect(() => {
     const fetchCharacters = async () => {
@@ -41,9 +46,24 @@ const Home = () => {
         </div>
       </section>
 
+      <section
+        className="characters-form"
+        onSubmit={(e) => {
+          e.preventDefault();
+        }}
+      >
+        <input
+          placeholder="Search characters by name"
+          className="character-search"
+          type="text"
+          value={searchInput}
+          onChange={(e) => setSearchInput(e.target.value)}
+        />
+      </section>
+
       <section className="characters-lists">
         <ul className="character-container">
-          {characters.map((character) => (
+          {filteredCharacters.map((character) => (
             <li key={character.id}>
               <Link to={`/character/${character.id}`}>
                 <img
