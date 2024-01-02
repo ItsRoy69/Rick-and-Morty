@@ -81,7 +81,7 @@ This will launch the Node.js backend server that fetches data from the Rick and 
 2. Start the frontend application.
 
 ```bash
-npm start
+npm run dev
 ```
 
 Visit https://ricksmorty.vercel.app in your browser to explore the Rick and Morty app.
